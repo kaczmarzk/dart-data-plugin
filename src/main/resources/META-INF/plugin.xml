@@ -82,17 +82,23 @@
         />
     </extensions>
 
+    <extensions defaultExtensionNs="com.intellij">
+        <defaultLiveTemplates file="/liveTemplates/Flutter.xml"/>
+        <liveTemplateContext  implementation="andrasferenczi.templater.FlutterContext"
+            contextId="andrasferenczi.templater.FLUTTER_FREEZED_SNIPPETS"/>
+    </extensions>
+
     <actions>
         <action id="andrasferenczi.action.NamedArgumentConstructorAction"
                 class="andrasferenczi.action.NamedArgumentConstructorAction"
-                text="Named Argument Constructor">
+                text="required Construstor">
             <add-to-group group-id="GenerateGroup"
                           anchor="after"
                           relative-to-action="Generate.Named.Constructor.Dart"/>
         </action>
         <action id="andrasferenczi.action.DartCopyWithAction"
                 class="andrasferenczi.action.DartCopyWithAction"
-                text="Copy">
+                text="copyWith">
             <add-to-group group-id="GenerateGroup"
                           anchor="after"
                           relative-to-action="andrasferenczi.action.NamedArgumentConstructorAction"/>
