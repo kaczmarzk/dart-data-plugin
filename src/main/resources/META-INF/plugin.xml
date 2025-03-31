@@ -99,7 +99,7 @@
         </action>
         <action id="andrasferenczi.action.MapAction"
                 class="andrasferenczi.action.MapAction"
-                text="toMap() and fromMap()">
+                text="toJson/fromJson">
             <add-to-group group-id="GenerateGroup"
                           anchor="after"
                           relative-to-action="andrasferenczi.action.DartCopyWithAction"/>
